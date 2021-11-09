@@ -46,4 +46,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
+  //アコーディオンをクリックした時の動作
+  $('.gallery__btn').on('click', function() {//タイトル要素をクリックしたら
+    $(".box").slideToggle();//アコーディオンの上下動作
+      
+    if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
+      $(this).removeClass('close');//クラス名を除去し
+    }else{//それ以外は
+      $(this).addClass('close');//クラス名closeを付与
+    }
+  });
+
 });

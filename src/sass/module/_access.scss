@@ -1,0 +1,53 @@
+.access {
+  padding: rem(125) rem(15);
+  &__media {
+    margin-top: rem(60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__body {
+    max-width: rem(475);
+    margin-right: rem(60);
+  }
+  &__item {
+    font-size: 0;
+  }
+  &__label {
+    font-size: rem(12);
+    font-weight: bold;
+    line-height: (28 / 16);
+  }
+  &__detail {
+    font-size: rem(12);
+    font-weight: bold;
+    line-height: (28 / 16);
+    margin-bottom: rem(30);
+  }
+  &__explain {
+    font-size: rem(12);
+    font-weight: bold;
+    line-height: (28 / 16);
+  }
+  &__link {
+    font-size: rem(12);
+    font-weight: bold;
+    line-height: (28 / 16);
+    color: #fff;
+    text-decoration: underline;
+  }
+  &__attention {
+    font-size: rem(12);
+    font-weight: bold;
+    line-height: (28 / 16);
+    margin-top: rem(30);
+  }
+  &__map {
+    width: rem(650);
+    height: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

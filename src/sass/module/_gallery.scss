@@ -1,0 +1,51 @@
+.gallery {
+  padding: rem(125) rem(15);
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: rem(180);
+    figure {
+      width: 100%;
+      height: auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__btn {
+    font-size: rem(14);
+    text-align: center;
+    margin-top: rem(30);
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 20%;
+      left: calc(50% + 40px);
+      width: rem(8);
+      height: rem(8);
+      border-top: rem(1.5) solid #fff;
+      border-right: rem(1.5) solid #fff;
+      -webkit-transform: rotate(135deg);
+      transform: rotate(135deg);
+    }
+  }
+}
+
+/*アコーディオン全体*/
+.accordion-area{
+  list-style: none;
+  width: 100%;
+  max-width: rem(1080);
+  margin-top: rem(60);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+  display: none;/*はじめは非表示*/
+}
