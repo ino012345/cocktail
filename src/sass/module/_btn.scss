@@ -1,9 +1,9 @@
 .btn {
   display: block;
-  width: rem(250);
+  width: rem(240);
   text-align: center;
-  padding-top: rem(11.5);
-  padding-bottom: rem(11.5);
+  padding-top: rem(12);
+  padding-bottom: rem(12);
   font-size: rem(14);
   font-weight: bold;
   color: #000;
@@ -49,6 +49,13 @@
     }
     &::before {
       border-color: #fff;
+    }
+  }
+  &--gallery {
+    background-color: #000;
+    color: #BEA55A;
+    &::before {
+      border-color: #BEA55A;
     }
   }
 }

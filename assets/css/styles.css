@@ -313,7 +313,7 @@ select::-ms-expand {
   padding: 7.8125rem 0.9375rem;
 }
 
-.award__list {
+.award__content {
   max-width: 830px;
   max-width: 51.875rem;
   width: 100%;
@@ -322,6 +322,10 @@ select::-ms-expand {
   margin-top: 30px;
   margin-top: 1.875rem;
   font-size: 0;
+}
+
+.award__list {
+  width: 100%;
 }
 
 .award__item {
@@ -352,6 +356,7 @@ select::-ms-expand {
 .award__left p {
   font-size: 12px;
   font-size: 0.75rem;
+  font-weight: bold;
 }
 
 .award__right p {
@@ -367,15 +372,23 @@ select::-ms-expand {
   margin-top: 0.9375rem;
 }
 
+.bg-fixed {
+  background-image: url(../images/common/bg.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .btn {
   display: block;
-  width: 250px;
-  width: 15.625rem;
+  width: 240px;
+  width: 15rem;
   text-align: center;
-  padding-top: 11.5px;
-  padding-top: 0.71875rem;
-  padding-bottom: 11.5px;
-  padding-bottom: 0.71875rem;
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: bold;
@@ -444,6 +457,15 @@ select::-ms-expand {
 
 .btn--black::before {
   border-color: #fff;
+}
+
+.btn--gallery {
+  background-color: #000;
+  color: #BEA55A;
+}
+
+.btn--gallery::before {
+  border-color: #BEA55A;
 }
 
 .contact {
@@ -551,6 +573,7 @@ select::-ms-expand {
 .entry__left p {
   font-size: 12px;
   font-size: 0.75rem;
+  font-weight: bold;
 }
 
 .entry__right p {
@@ -634,6 +657,7 @@ select::-ms-expand {
 .flow__label {
   font-size: 19.5px;
   font-size: 1.21875rem;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, serif;
 }
 
 .flow__date {
@@ -768,6 +792,14 @@ select::-ms-expand {
 }
 
 .gallery__list {
+  list-style: none;
+  width: 100%;
+  max-width: 1080px;
+  max-width: 67.5rem;
+  margin-top: 60px;
+  margin-top: 3.75rem;
+  margin-right: auto;
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -790,48 +822,15 @@ select::-ms-expand {
   height: 100%;
 }
 
-.gallery__btn {
-  font-size: 14px;
-  font-size: 0.875rem;
-  text-align: center;
-  margin-top: 30px;
-  margin-top: 1.875rem;
-  position: relative;
-}
-
-.gallery__btn::before {
-  content: "";
-  position: absolute;
-  top: 20%;
-  left: calc(50% + 40px);
-  width: 8px;
-  width: 0.5rem;
-  height: 8px;
-  height: 0.5rem;
-  border-top: 1.5px solid #fff;
-  border-top: 0.09375rem solid #fff;
-  border-right: 1.5px solid #fff;
-  border-right: 0.09375rem solid #fff;
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-
-/*アコーディオン全体*/
-.accordion-area {
-  list-style: none;
-  width: 100%;
-  max-width: 1080px;
-  max-width: 67.5rem;
-  margin-top: 60px;
-  margin-top: 3.75rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/*アコーディオンで現れるエリア*/
-.box {
-  display: none;
-  /*はじめは非表示*/
+.gallery__btnWrap {
+  margin-top: 95px;
+  margin-top: 5.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header {
@@ -964,6 +963,91 @@ select::-ms-expand {
     padding-right: 20px;
     padding-left: 20px;
   }
+}
+
+.outline {
+  padding-top: 95px;
+  padding-top: 5.9375rem;
+  padding-left: 15px;
+  padding-left: 0.9375rem;
+  padding-right: 15px;
+  padding-right: 0.9375rem;
+}
+
+.outline__content {
+  max-width: 830px;
+  max-width: 51.875rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  font-size: 0;
+}
+
+.outline__list {
+  width: 100%;
+}
+
+.outline__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 19.5px;
+  padding-top: 1.21875rem;
+  padding-bottom: 19.5px;
+  padding-bottom: 1.21875rem;
+  border-top: 1px solid #fff;
+  border-top: 0.0625rem solid #fff;
+}
+
+.outline__item:last-child {
+  border-bottom: 1px solid #fff;
+  border-bottom: 0.0625rem solid #fff;
+}
+
+.outline__left {
+  min-width: 125px;
+  min-width: 7.8125rem;
+}
+
+.outline__left p {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.outline__right p {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.75;
+}
+
+.outline__right p a {
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+  padding: 3px 10px;
+  padding: 0.1875rem 0.625rem;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  font-weight: bold;
+  color: #000;
+  background-color: #fff;
+  border-radius: 1.0625rem;
+}
+
+.outline__attention {
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+.outline__attention span {
+  font-weight: bold;
 }
 
 .section-heading {
