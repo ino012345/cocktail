@@ -10,18 +10,27 @@
   background-position: center;
   color: #BEA55A;
   position: relative;
+  @include mq(md) {
+    background-image: url(../images/common/fv-sp.jpg);
+  }
   &__inner {
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translateY(-40%);
-
+    @include mq(md) {
+      left: rem(15);
+      top: 65%;
+    }
   }
   &__title {
     font-size: rem(26);
     font-weight: bold;
     line-height: (65 / 40);
     letter-spacing: 0.15em;
+    @include mq(md) {
+      font-size: rem(24);
+    }
   }
   &__description {
     margin-top: rem(20);
@@ -36,6 +45,13 @@
     font-size: rem(26);
     span {
       font-size: rem(47);
+      @include mq(md) {
+        font-size: rem(40);
+      }
+    }
+    @include mq(md) {
+      font-size: rem(24);
+      margin-top: rem(35);
     }
   }
   &__btnWrap {

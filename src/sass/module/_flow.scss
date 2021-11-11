@@ -1,5 +1,8 @@
 .flow {
-  padding: rem(95) rem(15);
+  padding: rem(95) rem(25);
+  @include mq(md) {
+    padding-bottom: rem(50);
+  }
   &__list {
     margin-top: rem(97.5);
     max-width: rem(530);
@@ -13,6 +16,9 @@
     position: relative;
     &:first-child {
       margin-top: 0;
+    }
+    @include mq(md) {
+      padding-left: rem(110);
     }
     .number {
       position: absolute;
@@ -32,6 +38,10 @@
       top: 50%;
       transform: translateY(-50%);
       left: rem(65);
+      @include mq(md) {
+        width: rem(50);
+        left: rem(45);
+      }
     }
   }
   &__label {
@@ -39,7 +49,7 @@
     font-family: "游明朝体", "Yu Mincho", YuMincho, serif;
   }
   &__date {
-    font-size: rem(12);
+    font-size: rem(14);
     margin-top: rem(3);
   }
   &__btnWrap {

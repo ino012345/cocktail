@@ -1,7 +1,8 @@
 .outline {
-  padding-top: rem(95);
-  padding-left: rem(15);
-  padding-right: rem(15);
+  padding: rem(95) rem(15);
+  @include mq(md) {
+    padding-bottom: rem(50);
+  }
   &__content {
     max-width: rem(830);
     width: 100%;
@@ -22,26 +23,40 @@
     &:last-child {
       border-bottom: rem(1) solid #fff;
     }
+    @include mq(md) {
+      flex-direction: column;
+    }
   }
   &__left {
     min-width: rem(125);
     p {
-      font-size: rem(12);
+      font-size: rem(14);
       font-weight: bold;
+    }
+    @include mq(md) {
+      text-align: center;
+      margin-bottom: rem(10);
     }
   }
   &__right {
     p {
-      font-size: rem(12);
+      font-size: rem(14);
       line-height: (28 / 16);
       a {
         margin-left: rem(15);
         padding: rem(3) rem(10);
-        font-size: rem(11);
+        font-size: rem(12);
         font-weight: bold;
         color: #000;
         background-color: #fff;
         border-radius: rem(17);
+        @include mq(md) {
+          margin-left: 0;
+        }
+      }
+      @include mq(md) {
+        text-align: center;
+        line-height: 2;
       }
     }
   }
@@ -50,6 +65,9 @@
     margin-top: rem(10);
     span {
       font-weight: bold;
+    }
+    @include mq(md) {
+      text-align: center;
     }
   }
 }

@@ -1,5 +1,9 @@
 .about {
   padding: rem(125) rem(15);
+  @include mq(md) {
+    padding-top: rem(50);
+    padding-bottom: rem(60);
+  }
   &__english {
     font-size: rem(22.75);
     text-align: center;
@@ -11,7 +15,7 @@
   }
   &__content {
     text-align: center;
-    font-size: rem(12);
+    font-size: rem(14);
     line-height: (35 / 16);
     margin-top: rem(60);
   }

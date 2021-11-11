@@ -24,6 +24,9 @@
   }
   &--header {
     margin-right: rem(32.5);
+    @include mq(md) {
+      display: none;
+    }
   }
   &--left {
     width: rem(140);
@@ -33,11 +36,17 @@
     &::before {
       content: none;
     }
+    @include mq(md) {
+      width: rem(130);
+    }
   }
   &--right {
     width: rem(140);
     &::before {
       content: none;
+    }
+    @include mq(md) {
+      width: rem(130);
     }
   }
   &--black {

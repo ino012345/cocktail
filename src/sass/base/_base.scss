@@ -42,3 +42,10 @@ a {
 body {
   background-color: #000;
 }
+
+.sp-br {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}

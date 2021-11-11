@@ -6,7 +6,7 @@
     align-items: center;
     a {
       display: block;
-      width: rem(20);
+      width: rem(30);
       height: auto;
       img {
         width: 100%;
@@ -20,9 +20,10 @@
   &__information {
     margin-top: rem(50);
     p {
-      font-size: rem(12);
+      font-size: rem(14);
       line-height: (35 / 16);
       text-align: center;
+      font-weight: bold;
     }
   }
 }
