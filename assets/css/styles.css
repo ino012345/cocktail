@@ -249,6 +249,7 @@ select::-ms-expand {
   width: 100%;
   padding: 125px 0px;
   padding: 7.8125rem 0rem;
+  background-color: #000;
 }
 
 @media screen and (max-width: 767px) {
@@ -362,16 +363,21 @@ select::-ms-expand {
   }
 }
 
-.bg-fixed {
+.bg-fixed::after {
+  position: fixed;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
   background-image: url(../images/common/bg.jpg);
-  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
 }
 
 @media screen and (max-width: 767px) {
-  .bg-fixed {
+  .bg-fixed::after {
     background-image: url(../images/common/bg-sp.png);
   }
 }
@@ -489,6 +495,7 @@ select::-ms-expand {
   border-top: 0.0625rem solid #fff;
   border-bottom: 1px solid #fff;
   border-bottom: 0.0625rem solid #fff;
+  background-color: #000;
 }
 
 .contact__description {
@@ -834,6 +841,7 @@ select::-ms-expand {
 .footer {
   padding: 95px 15px;
   padding: 5.9375rem 0.9375rem;
+  background-color: #000;
 }
 
 .footer__sns {
@@ -973,6 +981,7 @@ select::-ms-expand {
 }
 
 .gallery {
+  background-color: #000;
   padding: 125px 15px;
   padding: 7.8125rem 0.9375rem;
 }

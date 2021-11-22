@@ -1,4 +1,5 @@
 .gallery {
+  background-color: #000;
   padding: rem(125) rem(15);
   @include mq(md) {
     padding-top: rem(95);
